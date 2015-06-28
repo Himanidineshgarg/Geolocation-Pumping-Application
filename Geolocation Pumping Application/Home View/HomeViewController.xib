@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="buttonChangePassword" destination="WQ5-k3-qBc" id="vvb-fe-ma5"/>
+                <outlet property="buttonLogout" destination="MK7-eb-xTY" id="8L9-Y3-PaU"/>
+                <outlet property="buttonStartTracking" destination="d7c-QF-DrZ" id="8Ka-Np-Jxy"/>
+                <outlet property="labelTitle" destination="Pjk-QU-PzF" id="ALa-dm-LJT"/>
+                <outlet property="textFieldDestinationAddress" destination="UqM-WF-7tu" id="Aav-4T-4sn"/>
+                <outlet property="textFieldTimeInterval" destination="DtB-7e-CR0" id="gca-Hk-bFV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-QU-PzF">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desination Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UqM-WF-7tu">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Interval" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtB-7e-CR0">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-QF-DrZ">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Start Tracking">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonStartTrackingAction:" destination="-1" eventType="touchUpInside" id="dIQ-xF-IKn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ5-k3-qBc">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Change Password">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonchangePasswordAction:" destination="-1" eventType="touchUpInside" id="lSG-3d-QR6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MK7-eb-xTY">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Logout">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonLogoutAction:" destination="-1" eventType="touchUpInside" id="0AR-xT-d5L"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="d7c-QF-DrZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="HUI-0i-xXI"/>
+                <constraint firstItem="WQ5-k3-qBc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="46" id="MWK-bX-OF4"/>
+                <constraint firstAttribute="trailing" secondItem="d7c-QF-DrZ" secondAttribute="trailing" constant="44" id="Ma2-Ml-30M"/>
+                <constraint firstAttribute="trailing" secondItem="MK7-eb-xTY" secondAttribute="trailing" constant="42" id="Rca-4h-QHC"/>
+                <constraint firstItem="d7c-QF-DrZ" firstAttribute="top" secondItem="DtB-7e-CR0" secondAttribute="bottom" constant="40" id="UFY-2o-rJY"/>
+                <constraint firstItem="WQ5-k3-qBc" firstAttribute="top" secondItem="d7c-QF-DrZ" secondAttribute="bottom" constant="40" id="UPZ-eu-AJg"/>
+                <constraint firstItem="UqM-WF-7tu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="UhT-Ki-KwL"/>
+                <constraint firstItem="MK7-eb-xTY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="46" id="XDJ-TZ-1L2"/>
+                <constraint firstAttribute="trailing" secondItem="UqM-WF-7tu" secondAttribute="trailing" constant="44" id="ZWA-ud-ORS"/>
+                <constraint firstItem="DtB-7e-CR0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="ZWg-yW-qdE"/>
+                <constraint firstItem="DtB-7e-CR0" firstAttribute="top" secondItem="UqM-WF-7tu" secondAttribute="bottom" constant="40" id="cNj-y8-yIV"/>
+                <constraint firstItem="UqM-WF-7tu" firstAttribute="top" secondItem="Pjk-QU-PzF" secondAttribute="bottom" constant="34" id="eIX-LU-CBQ"/>
+                <constraint firstItem="Pjk-QU-PzF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="iq5-UO-zoa"/>
+                <constraint firstAttribute="trailing" secondItem="WQ5-k3-qBc" secondAttribute="trailing" constant="42" id="jqV-2A-q05"/>
+                <constraint firstAttribute="trailing" secondItem="Pjk-QU-PzF" secondAttribute="trailing" id="lSn-7L-9WH"/>
+                <constraint firstAttribute="trailing" secondItem="DtB-7e-CR0" secondAttribute="trailing" constant="44" id="puF-gl-OCl"/>
+                <constraint firstItem="MK7-eb-xTY" firstAttribute="top" secondItem="WQ5-k3-qBc" secondAttribute="bottom" constant="40" id="tiL-ZF-z8Q"/>
+                <constraint firstItem="Pjk-QU-PzF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="x3J-cA-f9y"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Pjk-QU-PzF"/>
+                    <exclude reference="UqM-WF-7tu"/>
+                    <exclude reference="DtB-7e-CR0"/>
+                    <exclude reference="d7c-QF-DrZ"/>
+                    <exclude reference="WQ5-k3-qBc"/>
+                    <exclude reference="MK7-eb-xTY"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="iq5-UO-zoa"/>
+                    <exclude reference="lSn-7L-9WH"/>
+                    <exclude reference="x3J-cA-f9y"/>
+                    <exclude reference="UhT-Ki-KwL"/>
+                    <exclude reference="ZWA-ud-ORS"/>
+                    <exclude reference="eIX-LU-CBQ"/>
+                    <exclude reference="ZWg-yW-qdE"/>
+                    <exclude reference="cNj-y8-yIV"/>
+                    <exclude reference="puF-gl-OCl"/>
+                    <exclude reference="HUI-0i-xXI"/>
+                    <exclude reference="Ma2-Ml-30M"/>
+                    <exclude reference="UFY-2o-rJY"/>
+                    <exclude reference="MWK-bX-OF4"/>
+                    <exclude reference="UPZ-eu-AJg"/>
+                    <exclude reference="jqV-2A-q05"/>
+                    <exclude reference="Rca-4h-QHC"/>
+                    <exclude reference="XDJ-TZ-1L2"/>
+                    <exclude reference="tiL-ZF-z8Q"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Pjk-QU-PzF"/>
+                    <include reference="UqM-WF-7tu"/>
+                    <include reference="DtB-7e-CR0"/>
+                    <include reference="d7c-QF-DrZ"/>
+                    <include reference="WQ5-k3-qBc"/>
+                    <include reference="MK7-eb-xTY"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="iq5-UO-zoa"/>
+                    <include reference="lSn-7L-9WH"/>
+                    <include reference="x3J-cA-f9y"/>
+                    <include reference="UhT-Ki-KwL"/>
+                    <include reference="ZWA-ud-ORS"/>
+                    <include reference="eIX-LU-CBQ"/>
+                    <include reference="ZWg-yW-qdE"/>
+                    <include reference="cNj-y8-yIV"/>
+                    <include reference="puF-gl-OCl"/>
+                    <include reference="HUI-0i-xXI"/>
+                    <include reference="Ma2-Ml-30M"/>
+                    <include reference="UFY-2o-rJY"/>
+                    <include reference="MWK-bX-OF4"/>
+                    <include reference="UPZ-eu-AJg"/>
+                    <include reference="jqV-2A-q05"/>
+                    <include reference="Rca-4h-QHC"/>
+                    <include reference="XDJ-TZ-1L2"/>
+                    <include reference="tiL-ZF-z8Q"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

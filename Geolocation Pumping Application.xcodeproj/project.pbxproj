@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B96D2401B3EA1AC00A2D37A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B96D23F1B3EA1AC00A2D37A /* Reachability.m */; };
+		4B96D2421B3EA1C300A2D37A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B96D2411B3EA1C300A2D37A /* SystemConfiguration.framework */; };
+		4B96D2571B3F16D700A2D37A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B96D2551B3F16D700A2D37A /* LoginViewController.m */; };
+		4B96D2581B3F16D700A2D37A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B96D2561B3F16D700A2D37A /* LoginViewController.xib */; };
+		4B96D25E1B3F1ACA00A2D37A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B96D25C1B3F1ACA00A2D37A /* HomeViewController.m */; };
+		4B96D25F1B3F1ACA00A2D37A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B96D25D1B3F1ACA00A2D37A /* HomeViewController.xib */; };
+		4B96D2631B3F1CEB00A2D37A /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B96D2611B3F1CEB00A2D37A /* ChangePasswordViewController.m */; };
+		4B96D2641B3F1CEB00A2D37A /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B96D2621B3F1CEB00A2D37A /* ChangePasswordViewController.xib */; };
+		4B96D2681B3F1D2B00A2D37A /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B96D2661B3F1D2B00A2D37A /* ForgotPasswordViewController.m */; };
+		4B96D2691B3F1D2B00A2D37A /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B96D2671B3F1D2B00A2D37A /* ForgotPasswordViewController.xib */; };
+		4B96D26D1B3F1D5300A2D37A /* RegistartionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B96D26B1B3F1D5300A2D37A /* RegistartionViewController.m */; };
+		4B96D26E1B3F1D5300A2D37A /* RegistartionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B96D26C1B3F1D5300A2D37A /* RegistartionViewController.xib */; };
 		4BA49E991B3D1ECC00B83CED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49E981B3D1ECC00B83CED /* main.m */; };
-		4BA49EA21B3D1ECC00B83CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA49EA01B3D1ECC00B83CED /* Main.storyboard */; };
 		4BA49EA41B3D1ECC00B83CED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA49EA31B3D1ECC00B83CED /* Images.xcassets */; };
-		4BA49EA71B3D1ECC00B83CED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BA49EA51B3D1ECC00B83CED /* LaunchScreen.xib */; };
 		4BA49EB31B3D1ECC00B83CED /* Geolocation_Pumping_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49EB21B3D1ECC00B83CED /* Geolocation_Pumping_ApplicationTests.m */; };
 		4BA49EC11B3D564700B83CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49EC01B3D564700B83CED /* AppDelegate.m */; };
-		4BA49EC41B3D565300B83CED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49EC31B3D565300B83CED /* ViewController.m */; };
 		4BA49EE71B3D568D00B83CED /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49EC91B3D568D00B83CED /* IQNSArray+Sort.m */; };
 		4BA49EE81B3D568D00B83CED /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49ECB1B3D568D00B83CED /* IQUIView+Hierarchy.m */; };
 		4BA49EE91B3D568D00B83CED /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA49ECD1B3D568D00B83CED /* IQUIWindow+Hierarchy.m */; };
@@ -41,19 +50,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B96D23E1B3EA1AC00A2D37A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4B96D23F1B3EA1AC00A2D37A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4B96D2411B3EA1C300A2D37A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4B96D2541B3F16D700A2D37A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "Login View/LoginViewController.h"; sourceTree = "<group>"; };
+		4B96D2551B3F16D700A2D37A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "Login View/LoginViewController.m"; sourceTree = "<group>"; };
+		4B96D2561B3F16D700A2D37A /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = "Login View/LoginViewController.xib"; sourceTree = "<group>"; };
+		4B96D25B1B3F1ACA00A2D37A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = "Home View/HomeViewController.h"; sourceTree = "<group>"; };
+		4B96D25C1B3F1ACA00A2D37A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = "Home View/HomeViewController.m"; sourceTree = "<group>"; };
+		4B96D25D1B3F1ACA00A2D37A /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = "Home View/HomeViewController.xib"; sourceTree = "<group>"; };
+		4B96D2601B3F1CEB00A2D37A /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChangePasswordViewController.h; path = "Change Password/ChangePasswordViewController.h"; sourceTree = "<group>"; };
+		4B96D2611B3F1CEB00A2D37A /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChangePasswordViewController.m; path = "Change Password/ChangePasswordViewController.m"; sourceTree = "<group>"; };
+		4B96D2621B3F1CEB00A2D37A /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ChangePasswordViewController.xib; path = "Change Password/ChangePasswordViewController.xib"; sourceTree = "<group>"; };
+		4B96D2651B3F1D2B00A2D37A /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForgotPasswordViewController.h; path = "Forgot Password/ForgotPasswordViewController.h"; sourceTree = "<group>"; };
+		4B96D2661B3F1D2B00A2D37A /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForgotPasswordViewController.m; path = "Forgot Password/ForgotPasswordViewController.m"; sourceTree = "<group>"; };
+		4B96D2671B3F1D2B00A2D37A /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ForgotPasswordViewController.xib; path = "Forgot Password/ForgotPasswordViewController.xib"; sourceTree = "<group>"; };
+		4B96D26A1B3F1D5300A2D37A /* RegistartionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistartionViewController.h; path = "Registration Screen/RegistartionViewController.h"; sourceTree = "<group>"; };
+		4B96D26B1B3F1D5300A2D37A /* RegistartionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistartionViewController.m; path = "Registration Screen/RegistartionViewController.m"; sourceTree = "<group>"; };
+		4B96D26C1B3F1D5300A2D37A /* RegistartionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegistartionViewController.xib; path = "Registration Screen/RegistartionViewController.xib"; sourceTree = "<group>"; };
 		4BA49E931B3D1ECC00B83CED /* Geolocation Pumping Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geolocation Pumping Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA49E971B3D1ECC00B83CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA49E981B3D1ECC00B83CED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4BA49EA11B3D1ECC00B83CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BA49EA31B3D1ECC00B83CED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4BA49EA61B3D1ECC00B83CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4BA49EAC1B3D1ECC00B83CED /* Geolocation Pumping ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geolocation Pumping ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA49EB11B3D1ECC00B83CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BA49EB21B3D1ECC00B83CED /* Geolocation_Pumping_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Geolocation_Pumping_ApplicationTests.m; sourceTree = "<group>"; };
 		4BA49EBF1B3D564700B83CED /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "App Delegate/AppDelegate.h"; sourceTree = "<group>"; };
 		4BA49EC01B3D564700B83CED /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "App Delegate/AppDelegate.m"; sourceTree = "<group>"; };
-		4BA49EC21B3D565300B83CED /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "Home View/ViewController.h"; sourceTree = "<group>"; };
-		4BA49EC31B3D565300B83CED /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "Home View/ViewController.m"; sourceTree = "<group>"; };
 		4BA49EC81B3D568D00B83CED /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		4BA49EC91B3D568D00B83CED /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
 		4BA49ECA1B3D568D00B83CED /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
@@ -91,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B96D2421B3EA1C300A2D37A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +128,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B96D23D1B3EA1AC00A2D37A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				4B96D23E1B3EA1AC00A2D37A /* Reachability.h */,
+				4B96D23F1B3EA1AC00A2D37A /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		4B96D2471B3EDD3E00A2D37A /* Change Password */ = {
+			isa = PBXGroup;
+			children = (
+				4B96D2601B3F1CEB00A2D37A /* ChangePasswordViewController.h */,
+				4B96D2611B3F1CEB00A2D37A /* ChangePasswordViewController.m */,
+				4B96D2621B3F1CEB00A2D37A /* ChangePasswordViewController.xib */,
+			);
+			name = "Change Password";
+			sourceTree = "<group>";
+		};
+		4B96D24B1B3EE11A00A2D37A /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				4B96D25B1B3F1ACA00A2D37A /* HomeViewController.h */,
+				4B96D25C1B3F1ACA00A2D37A /* HomeViewController.m */,
+				4B96D25D1B3F1ACA00A2D37A /* HomeViewController.xib */,
+			);
+			name = "Home View";
+			sourceTree = "<group>";
+		};
 		4BA49E8A1B3D1ECB00B83CED = {
 			isa = PBXGroup;
 			children = (
+				4B96D2411B3EA1C300A2D37A /* SystemConfiguration.framework */,
 				4BA49E951B3D1ECC00B83CED /* Geolocation Pumping Application */,
 				4BA49EAF1B3D1ECC00B83CED /* Geolocation Pumping ApplicationTests */,
 				4BA49E941B3D1ECC00B83CED /* Products */,
@@ -126,9 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				4BA49EBE1B3D55C700B83CED /* Classes */,
-				4BA49EA01B3D1ECC00B83CED /* Main.storyboard */,
 				4BA49EA31B3D1ECC00B83CED /* Images.xcassets */,
-				4BA49EA51B3D1ECC00B83CED /* LaunchScreen.xib */,
 				4BA49E961B3D1ECC00B83CED /* Supporting Files */,
 			);
 			path = "Geolocation Pumping Application";
@@ -169,21 +221,26 @@
 			name = "Application Intialization";
 			sourceTree = "<group>";
 		};
-		4BA49EBD1B3D55A600B83CED /* Home View */ = {
+		4BA49EBD1B3D55A600B83CED /* Login View */ = {
 			isa = PBXGroup;
 			children = (
-				4BA49EC21B3D565300B83CED /* ViewController.h */,
-				4BA49EC31B3D565300B83CED /* ViewController.m */,
+				4B96D2541B3F16D700A2D37A /* LoginViewController.h */,
+				4B96D2551B3F16D700A2D37A /* LoginViewController.m */,
+				4B96D2561B3F16D700A2D37A /* LoginViewController.xib */,
 			);
-			name = "Home View";
+			name = "Login View";
 			sourceTree = "<group>";
 		};
 		4BA49EBE1B3D55C700B83CED /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B96D24B1B3EE11A00A2D37A /* Home View */,
+				4B96D2471B3EDD3E00A2D37A /* Change Password */,
+				4BAA781C1B3E639300D1B581 /* Forgot Password */,
+				4BC535761B3E586F0032644E /* Registration Screen */,
 				4BA49EC51B3D568D00B83CED /* Third API Classes */,
 				4BA49EBC1B3D558600B83CED /* Application Intialization */,
-				4BA49EBD1B3D55A600B83CED /* Home View */,
+				4BA49EBD1B3D55A600B83CED /* Login View */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -191,6 +248,7 @@
 		4BA49EC51B3D568D00B83CED /* Third API Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B96D23D1B3EA1AC00A2D37A /* Reachability */,
 				4BA49F141B3DC58000B83CED /* MBProgressHUD  */,
 				4BA49EF31B3D5D1400B83CED /* Form Validation */,
 				4BA49EC61B3D568D00B83CED /* IQKeyBoardManager */,
@@ -298,6 +356,26 @@
 			path = "Geolocation Pumping Application/Third API Classes/MBProgressHUD ";
 			sourceTree = SOURCE_ROOT;
 		};
+		4BAA781C1B3E639300D1B581 /* Forgot Password */ = {
+			isa = PBXGroup;
+			children = (
+				4B96D2651B3F1D2B00A2D37A /* ForgotPasswordViewController.h */,
+				4B96D2661B3F1D2B00A2D37A /* ForgotPasswordViewController.m */,
+				4B96D2671B3F1D2B00A2D37A /* ForgotPasswordViewController.xib */,
+			);
+			name = "Forgot Password";
+			sourceTree = "<group>";
+		};
+		4BC535761B3E586F0032644E /* Registration Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4B96D26A1B3F1D5300A2D37A /* RegistartionViewController.h */,
+				4B96D26B1B3F1D5300A2D37A /* RegistartionViewController.m */,
+				4B96D26C1B3F1D5300A2D37A /* RegistartionViewController.xib */,
+			);
+			name = "Registration Screen";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,10 +456,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BA49EA21B3D1ECC00B83CED /* Main.storyboard in Resources */,
-				4BA49EA71B3D1ECC00B83CED /* LaunchScreen.xib in Resources */,
+				4B96D2691B3F1D2B00A2D37A /* ForgotPasswordViewController.xib in Resources */,
+				4B96D2581B3F16D700A2D37A /* LoginViewController.xib in Resources */,
 				4BA49EF21B3D568D00B83CED /* IQKeyboardManager.bundle in Resources */,
+				4B96D2641B3F1CEB00A2D37A /* ChangePasswordViewController.xib in Resources */,
 				4BA49EA41B3D1ECC00B83CED /* Images.xcassets in Resources */,
+				4B96D25F1B3F1ACA00A2D37A /* HomeViewController.xib in Resources */,
+				4B96D26E1B3F1D5300A2D37A /* RegistartionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,16 +485,21 @@
 				4BA49EEB1B3D568D00B83CED /* IQKeyboardReturnKeyHandler.m in Sources */,
 				4BA49EF11B3D568D00B83CED /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				4BA49EEE1B3D568D00B83CED /* IQBarButtonItem.m in Sources */,
+				4B96D25E1B3F1ACA00A2D37A /* HomeViewController.m in Sources */,
 				4BA49EEC1B3D568D00B83CED /* IQSegmentedNextPrevious.m in Sources */,
 				4BA49EED1B3D568D00B83CED /* IQTextView.m in Sources */,
 				4BA49EEA1B3D568D00B83CED /* IQKeyboardManager.m in Sources */,
-				4BA49EC41B3D565300B83CED /* ViewController.m in Sources */,
+				4B96D2401B3EA1AC00A2D37A /* Reachability.m in Sources */,
+				4B96D2571B3F16D700A2D37A /* LoginViewController.m in Sources */,
+				4B96D26D1B3F1D5300A2D37A /* RegistartionViewController.m in Sources */,
 				4BA49EF61B3D5D1400B83CED /* NSString+FormValidation.m in Sources */,
 				4BA49EC11B3D564700B83CED /* AppDelegate.m in Sources */,
 				4BA49F171B3DC58000B83CED /* MBProgressHUD.m in Sources */,
 				4BA49EF01B3D568D00B83CED /* IQToolbar.m in Sources */,
 				4BA49EE91B3D568D00B83CED /* IQUIWindow+Hierarchy.m in Sources */,
 				4BA49E991B3D1ECC00B83CED /* main.m in Sources */,
+				4B96D2681B3F1D2B00A2D37A /* ForgotPasswordViewController.m in Sources */,
+				4B96D2631B3F1CEB00A2D37A /* ChangePasswordViewController.m in Sources */,
 				4BA49EE81B3D568D00B83CED /* IQUIView+Hierarchy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,25 +521,6 @@
 			targetProxy = 4BA49EAD1B3D1ECC00B83CED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4BA49EA01B3D1ECC00B83CED /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BA49EA11B3D1ECC00B83CED /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4BA49EA51B3D1ECC00B83CED /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BA49EA61B3D1ECC00B83CED /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BA49EB41B3D1ECC00B83CED /* Debug */ = {
@@ -605,6 +672,7 @@
 				4BA49EB81B3D1ECC00B83CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BA49EB91B3D1ECC00B83CED /* Build configuration list for PBXNativeTarget "Geolocation Pumping ApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +681,7 @@
 				4BA49EBB1B3D1ECC00B83CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    if ([[NSUserDefaults standardUserDefaults]valueForKey:@"authentication_token"] != nil) {
+        self.homeView =[[HomeViewController alloc]initWithNibName:@"HomeViewController"bundle:nil];
+        self.navigationController =[[UINavigationController alloc]initWithRootViewController:self.homeView];
+    }
+    else
+    {
+        self.loginView =[[LoginViewController alloc]initWithNibName:@"LoginViewController"bundle:nil];
+        self.navigationController =[[UINavigationController alloc]initWithRootViewController:self.loginView];
+    }
+   
+    self.navigationController.navigationBar.hidden=YES;
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    return YES;
+
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -13,4 +13,12 @@
 	return (self.length >= 1);
 }
 
+- (BOOL)isValidPassword {
+    return (self.length >= 1);
+}
+
+- (BOOL)isMinimumPasswordLength {
+    return (self.length >= 8);
+}
+
 @end

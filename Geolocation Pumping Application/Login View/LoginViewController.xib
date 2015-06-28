@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="buttonForgotPassword" destination="qr0-oy-onB" id="OcO-Ui-zuv"/>
+                <outlet property="buttonLogin" destination="DBY-1n-xZv" id="EMh-cm-qvq"/>
+                <outlet property="buttonRegisterNow" destination="JDp-U1-iao" id="ES4-B7-55P"/>
+                <outlet property="labelTitle" destination="yvq-6d-pwC" id="a8I-gf-cGV"/>
+                <outlet property="textfieldEmailAddress" destination="CkG-kx-myx" id="PhF-vt-StW"/>
+                <outlet property="textfieldPassword" destination="wV9-rN-Pvp" id="ixC-ad-pmr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvq-6d-pwC">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-kx-myx">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-rN-Pvp">
+                    <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBY-1n-xZv">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonLoginAction:" destination="-1" eventType="touchUpInside" id="nK9-kr-8vr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDp-U1-iao">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Register Now">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonRegisterNowAction:" destination="-1" eventType="touchUpInside" id="c3h-90-7YM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr0-oy-onB">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <state key="normal" title="Forgot Password">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonForgotPasswordAction:" destination="-1" eventType="touchUpInside" id="tmf-me-ndB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qr0-oy-onB" secondAttribute="trailing" constant="35" id="1e0-Kj-L8H"/>
+                <constraint firstAttribute="trailing" secondItem="DBY-1n-xZv" secondAttribute="trailing" constant="35" id="A9x-eD-gfs"/>
+                <constraint firstItem="wV9-rN-Pvp" firstAttribute="top" secondItem="CkG-kx-myx" secondAttribute="bottom" constant="46" id="Iis-Uh-B2m"/>
+                <constraint firstItem="yvq-6d-pwC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="JVM-j5-bDt"/>
+                <constraint firstAttribute="trailing" secondItem="wV9-rN-Pvp" secondAttribute="trailing" constant="44" id="Jby-4e-egi"/>
+                <constraint firstAttribute="trailing" secondItem="CkG-kx-myx" secondAttribute="trailing" constant="44" id="M8q-aN-8HE"/>
+                <constraint firstItem="DBY-1n-xZv" firstAttribute="top" secondItem="wV9-rN-Pvp" secondAttribute="bottom" constant="39" id="Pea-uT-L2g"/>
+                <constraint firstItem="JDp-U1-iao" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="53" id="Qzb-Of-Fa0"/>
+                <constraint firstItem="CkG-kx-myx" firstAttribute="top" secondItem="yvq-6d-pwC" secondAttribute="bottom" constant="49" id="RTe-Xx-Fnd"/>
+                <constraint firstItem="DBY-1n-xZv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="53" id="SRa-oJ-tTg"/>
+                <constraint firstItem="qr0-oy-onB" firstAttribute="top" secondItem="JDp-U1-iao" secondAttribute="bottom" constant="40" id="UGB-V2-eyd"/>
+                <constraint firstAttribute="trailing" secondItem="yvq-6d-pwC" secondAttribute="trailing" id="XXf-Wu-w6a"/>
+                <constraint firstItem="qr0-oy-onB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="53" id="YYy-9L-SYz"/>
+                <constraint firstItem="yvq-6d-pwC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="etX-yK-aTT"/>
+                <constraint firstAttribute="trailing" secondItem="JDp-U1-iao" secondAttribute="trailing" constant="35" id="fn7-F9-Nla"/>
+                <constraint firstItem="JDp-U1-iao" firstAttribute="top" secondItem="DBY-1n-xZv" secondAttribute="bottom" constant="40" id="om0-MI-Ogm"/>
+                <constraint firstItem="CkG-kx-myx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="uM9-si-Zsc"/>
+                <constraint firstItem="wV9-rN-Pvp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="uYf-KC-9aJ"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="yvq-6d-pwC"/>
+                    <exclude reference="CkG-kx-myx"/>
+                    <exclude reference="wV9-rN-Pvp"/>
+                    <exclude reference="DBY-1n-xZv"/>
+                    <exclude reference="JDp-U1-iao"/>
+                    <exclude reference="qr0-oy-onB"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="M8q-aN-8HE"/>
+                    <exclude reference="RTe-Xx-Fnd"/>
+                    <exclude reference="uM9-si-Zsc"/>
+                    <exclude reference="Iis-Uh-B2m"/>
+                    <exclude reference="Jby-4e-egi"/>
+                    <exclude reference="uYf-KC-9aJ"/>
+                    <exclude reference="JVM-j5-bDt"/>
+                    <exclude reference="XXf-Wu-w6a"/>
+                    <exclude reference="etX-yK-aTT"/>
+                    <exclude reference="A9x-eD-gfs"/>
+                    <exclude reference="Pea-uT-L2g"/>
+                    <exclude reference="SRa-oJ-tTg"/>
+                    <exclude reference="Qzb-Of-Fa0"/>
+                    <exclude reference="fn7-F9-Nla"/>
+                    <exclude reference="om0-MI-Ogm"/>
+                    <exclude reference="1e0-Kj-L8H"/>
+                    <exclude reference="UGB-V2-eyd"/>
+                    <exclude reference="YYy-9L-SYz"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="yvq-6d-pwC"/>
+                    <include reference="CkG-kx-myx"/>
+                    <include reference="wV9-rN-Pvp"/>
+                    <include reference="DBY-1n-xZv"/>
+                    <include reference="JDp-U1-iao"/>
+                    <include reference="qr0-oy-onB"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="M8q-aN-8HE"/>
+                    <include reference="RTe-Xx-Fnd"/>
+                    <include reference="uM9-si-Zsc"/>
+                    <include reference="Iis-Uh-B2m"/>
+                    <include reference="Jby-4e-egi"/>
+                    <include reference="uYf-KC-9aJ"/>
+                    <include reference="JVM-j5-bDt"/>
+                    <include reference="XXf-Wu-w6a"/>
+                    <include reference="etX-yK-aTT"/>
+                    <include reference="A9x-eD-gfs"/>
+                    <include reference="Pea-uT-L2g"/>
+                    <include reference="SRa-oJ-tTg"/>
+                    <include reference="Qzb-Of-Fa0"/>
+                    <include reference="fn7-F9-Nla"/>
+                    <include reference="om0-MI-Ogm"/>
+                    <include reference="1e0-Kj-L8H"/>
+                    <include reference="UGB-V2-eyd"/>
+                    <include reference="YYy-9L-SYz"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
