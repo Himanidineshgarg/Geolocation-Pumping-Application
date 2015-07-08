@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface RegistartionViewController : UIViewController
+#import "MBProgressHUD.h"
+#import "Reachability.h"
+#import "HomeViewController.h"
+@interface RegistartionViewController : UIViewController<UIAlertViewDelegate>
 
 @end

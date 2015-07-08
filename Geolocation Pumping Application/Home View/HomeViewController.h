@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface HomeViewController : UIViewController
-
+#import "MBProgressHUD.h"
+#import "Reachability.h"
+#import "LocationTracker.h"
+@interface HomeViewController : UIViewController<UIAlertViewDelegate,CLLocationManagerDelegate>
+@property LocationTracker * locationTracker;
+@property (nonatomic) NSTimer* locationUpdateTimer;
 @end

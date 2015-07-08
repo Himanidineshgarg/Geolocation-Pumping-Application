@@ -127,13 +127,25 @@
                                                });
                                                
                                            }
-                                           else
-                                           {
+                                           else if ([[[jsonDictionary objectForKey:@"result"] objectForKey:@"errorcode"]integerValue]== 404) {
                                                dispatch_async(dispatch_get_main_queue(), ^{
-                                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Password has been sent to the registered email address" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[[jsonDictionary objectForKey:@"result"] objectForKey:@"messages"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                                    [alert show];
                                                });
+                                               
                                            }
+                                           else
+                                           {
+                                               
+                                               if ([[jsonDictionary objectForKey:@"data"]count]>0) {
+                                                   dispatch_async(dispatch_get_main_queue(), ^{
+                                                       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[[jsonDictionary objectForKey:@"data"] objectForKey:@"messages"] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                                       [alert show];
+                                                   });
+ 
+                                                   
+                                               }
+                                                                                          }
                                            
                                        }
                                        

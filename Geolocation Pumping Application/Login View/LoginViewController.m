@@ -103,10 +103,8 @@
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url
                                                                cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                            timeoutInterval:60.0];
-        
         [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
-        
         [request setHTTPMethod:@"POST"];
         NSDictionary *dictionaryLogin = [[NSDictionary alloc] initWithObjectsAndKeys:
                                          textfieldEmailAddress.text, @"email",
@@ -150,7 +148,6 @@
                                            if ([[jsonDictionary objectForKey:@"result"]count]==0) {
                                                NSLog(@"%@",jsonDictionary);
                                                [[NSUserDefaults standardUserDefaults]setObject:textfieldEmailAddress.text forKey:@"email"];
-                                               [[NSUserDefaults standardUserDefaults]setObject:textfieldPassword.text forKey:@"password"];
                                                [[NSUserDefaults standardUserDefaults]setObject:[jsonDictionary objectForKey:@"id"]forKey:@"id"];
                                                [[NSUserDefaults standardUserDefaults]setObject:[jsonDictionary objectForKey:@"first_name"] forKey:@"first_name"];
                                                [[NSUserDefaults standardUserDefaults]setObject:[jsonDictionary objectForKey:@"last_name"] forKey:@"last_name"];

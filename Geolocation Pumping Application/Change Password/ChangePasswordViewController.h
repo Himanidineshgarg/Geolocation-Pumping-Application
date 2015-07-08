@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 #import "Reachability.h"
+#import "LoginViewController.h"
 
-@interface ChangePasswordViewController : UIViewController
+@interface ChangePasswordViewController : UIViewController<UIAlertViewDelegate>
 
 @end

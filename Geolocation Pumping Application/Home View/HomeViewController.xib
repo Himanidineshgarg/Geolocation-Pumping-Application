@@ -29,13 +29,15 @@
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Desination Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UqM-WF-7tu">
                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Interval" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtB-7e-CR0">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Interval (in seconds)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DtB-7e-CR0">
                     <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <color key="textColor" red="0.2901960784" green="0.30588235289999999" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7c-QF-DrZ">
                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -105,24 +107,24 @@
                     <exclude reference="MK7-eb-xTY"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="ZWg-yW-qdE"/>
+                    <exclude reference="cNj-y8-yIV"/>
+                    <exclude reference="puF-gl-OCl"/>
                     <exclude reference="iq5-UO-zoa"/>
                     <exclude reference="lSn-7L-9WH"/>
                     <exclude reference="x3J-cA-f9y"/>
                     <exclude reference="UhT-Ki-KwL"/>
                     <exclude reference="ZWA-ud-ORS"/>
                     <exclude reference="eIX-LU-CBQ"/>
-                    <exclude reference="ZWg-yW-qdE"/>
-                    <exclude reference="cNj-y8-yIV"/>
-                    <exclude reference="puF-gl-OCl"/>
-                    <exclude reference="HUI-0i-xXI"/>
-                    <exclude reference="Ma2-Ml-30M"/>
-                    <exclude reference="UFY-2o-rJY"/>
-                    <exclude reference="MWK-bX-OF4"/>
-                    <exclude reference="UPZ-eu-AJg"/>
-                    <exclude reference="jqV-2A-q05"/>
                     <exclude reference="Rca-4h-QHC"/>
                     <exclude reference="XDJ-TZ-1L2"/>
                     <exclude reference="tiL-ZF-z8Q"/>
+                    <exclude reference="MWK-bX-OF4"/>
+                    <exclude reference="UPZ-eu-AJg"/>
+                    <exclude reference="jqV-2A-q05"/>
+                    <exclude reference="HUI-0i-xXI"/>
+                    <exclude reference="Ma2-Ml-30M"/>
+                    <exclude reference="UFY-2o-rJY"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -135,24 +137,24 @@
                     <include reference="MK7-eb-xTY"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="ZWg-yW-qdE"/>
+                    <include reference="cNj-y8-yIV"/>
+                    <include reference="puF-gl-OCl"/>
                     <include reference="iq5-UO-zoa"/>
                     <include reference="lSn-7L-9WH"/>
                     <include reference="x3J-cA-f9y"/>
                     <include reference="UhT-Ki-KwL"/>
                     <include reference="ZWA-ud-ORS"/>
                     <include reference="eIX-LU-CBQ"/>
-                    <include reference="ZWg-yW-qdE"/>
-                    <include reference="cNj-y8-yIV"/>
-                    <include reference="puF-gl-OCl"/>
-                    <include reference="HUI-0i-xXI"/>
-                    <include reference="Ma2-Ml-30M"/>
-                    <include reference="UFY-2o-rJY"/>
-                    <include reference="MWK-bX-OF4"/>
-                    <include reference="UPZ-eu-AJg"/>
-                    <include reference="jqV-2A-q05"/>
                     <include reference="Rca-4h-QHC"/>
                     <include reference="XDJ-TZ-1L2"/>
                     <include reference="tiL-ZF-z8Q"/>
+                    <include reference="MWK-bX-OF4"/>
+                    <include reference="UPZ-eu-AJg"/>
+                    <include reference="jqV-2A-q05"/>
+                    <include reference="HUI-0i-xXI"/>
+                    <include reference="Ma2-Ml-30M"/>
+                    <include reference="UFY-2o-rJY"/>
                 </mask>
             </variation>
         </view>
