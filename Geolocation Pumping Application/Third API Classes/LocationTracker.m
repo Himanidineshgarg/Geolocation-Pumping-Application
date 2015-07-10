@@ -340,7 +340,7 @@
                                                        dispatch_async(dispatch_get_main_queue(), ^{
                                                            
                                                            
-                                                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"your current location is %@",[jsonDictionary objectForKey:@"address"]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"your current location is %@ and latitude %@ and longitude %@",[jsonDictionary objectForKey:@"address"],[jsonDictionary objectForKey:@"latitude"],[jsonDictionary objectForKey:@"longitude"]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                                            [alert show];
                                                            return ;
                                                            
