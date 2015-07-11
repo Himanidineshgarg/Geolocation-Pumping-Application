@@ -21,7 +21,13 @@
     IBOutlet UIButton *buttonLogout;
     IBOutlet UIButton *buttonChangePassword;
     
+    int buttonClicked;
+    
+    
 }
+@property (nonatomic, retain)IBOutlet UILabel *labelCurrentLocation;
+@property (nonatomic, retain)IBOutlet UILabel *labelCurrentLongitude;
+@property (nonatomic, retain)IBOutlet UILabel *labelCurrentLatitude;
 -(IBAction)buttonStartTrackingAction:(id)sender;
 -(IBAction)buttonLogoutAction:(id)sender;
 -(IBAction)buttonchangePasswordAction:(id)sender;
@@ -33,6 +39,9 @@
 #pragma mark - View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    buttonClicked =0;
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveTestNotification:) name:@"NotificationMessageEvent" object:nil];
+    
     /*
     self.locationTracker = [[LocationTracker alloc]init];
     [self.locationTracker startLocationTracking];
@@ -65,7 +74,23 @@
     }
     else
     {
-        [self postDestinationAddress];
+        if (buttonClicked == 0) {
+            buttonClicked =1;
+            [self postDestinationAddress];
+            [buttonStartTracking setTitle:@"Stop Tracking" forState:UIControlStateNormal];
+            [buttonStartTracking setTitle:@"Stop Tracking" forState:UIControlStateHighlighted];
+            
+ 
+        }
+        else
+        {
+            buttonClicked =0;
+            [buttonStartTracking setTitle:@"Start Tracking" forState:UIControlStateNormal];
+            [buttonStartTracking setTitle:@"Start Tracking" forState:UIControlStateHighlighted];
+            [self.locationUpdateTimer invalidate];
+            self.locationUpdateTimer =nil;
+            [self.locationTracker stopLocationTracking];
+        }
     }
 
 }
@@ -115,6 +140,8 @@
 
 -(void)postDestinationAddress
 {
+    
+    
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     NetworkStatus internetStatus = [reachability currentReachabilityStatus];
     if (internetStatus != NotReachable) {
@@ -294,5 +321,13 @@
     [self.locationTracker updateLocationToServer];
 }
 
+-(void) receiveTestNotification:(NSNotification*)notification
+{
+        NSDictionary* userInfo = notification.userInfo;
+        self.labelCurrentLatitude.text =[userInfo objectForKey:@"latitude"];
+        self.labelCurrentLocation.text =[userInfo objectForKey:@"address"];
+        self.labelCurrentLongitude.text =[userInfo objectForKey:@"longitude"];
+    
+}
 
 @end

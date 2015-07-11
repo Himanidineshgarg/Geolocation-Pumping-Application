@@ -339,10 +339,14 @@
                                                    if ([[jsonDictionary objectForKey:@"address"]length]>0) {
                                                        dispatch_async(dispatch_get_main_queue(), ^{
                                                            
+                                                           NSDictionary* userInfo = [[NSDictionary alloc]initWithObjectsAndKeys:[jsonDictionary objectForKey:@"address"],@"address",[jsonDictionary objectForKey:@"latitude"],@"latitude",[jsonDictionary objectForKey:@"longitude"],@"longitude", nil];
                                                            
-                                                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"your current location is %@ and latitude %@ and longitude %@",[jsonDictionary objectForKey:@"address"],[jsonDictionary objectForKey:@"latitude"],[jsonDictionary objectForKey:@"longitude"]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                                                           [alert show];
-                                                           return ;
+                                                           
+                                                           [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationMessageEvent" object:self userInfo:userInfo];
+                                                           
+//                                                           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[NSString stringWithFormat:@"your current location is %@ and latitude %@ and longitude %@",[jsonDictionary objectForKey:@"address"],[jsonDictionary objectForKey:@"latitude"],[jsonDictionary objectForKey:@"longitude"]] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//                                                           [alert show];
+//                                                           return ;
                                                            
                                                        });
 
