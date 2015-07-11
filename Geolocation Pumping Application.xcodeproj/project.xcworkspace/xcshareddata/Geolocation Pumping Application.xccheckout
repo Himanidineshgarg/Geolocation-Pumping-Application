@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A00B7A09-4068-4148-968D-61576F490A04</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Geolocation Pumping Application</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>19294BC62E08C65CC8AAEA7F58623AEB4ECA9A25</key>
 		<string>https://github.com/Himanidineshgarg/Geolocation-Pumping-Application.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Geolocation Pumping Application.xcodeproj/project.xcworkspace</string>
+	<string>Geolocation Pumping Application.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>19294BC62E08C65CC8AAEA7F58623AEB4ECA9A25</key>
