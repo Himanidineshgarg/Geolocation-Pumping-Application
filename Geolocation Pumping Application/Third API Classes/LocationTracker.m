@@ -41,6 +41,8 @@
     
     if(IS_OS_8_OR_LATER) {
         [locationManager requestAlwaysAuthorization];
+        [locationManager requestWhenInUseAuthorization];
+        
         
     }
     [locationManager startUpdatingLocation];
@@ -66,6 +68,7 @@
     
     if(IS_OS_8_OR_LATER) {
         [locationManager requestAlwaysAuthorization];
+        [locationManager requestWhenInUseAuthorization];
     }
     [locationManager startUpdatingLocation];
 }
@@ -92,6 +95,8 @@
             
             if(IS_OS_8_OR_LATER) {
               [locationManager requestAlwaysAuthorization];
+                [locationManager requestWhenInUseAuthorization];
+
             }
             [locationManager startUpdatingLocation];
         }
